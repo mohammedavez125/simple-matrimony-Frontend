@@ -6,7 +6,7 @@ function Login() {
     e.preventDefault();
     console.log(email, password);
     if (email != " " && password != "") {
-      fetch("http://localhost:5000/api/user/login-user", {
+      fetch("http://13.201.190.95:5000/api/user/login-user", {
         method: "POST",
         crossDomain: true,
         headers: {
