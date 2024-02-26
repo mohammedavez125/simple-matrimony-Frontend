@@ -118,7 +118,7 @@ function Payment() {
   const handlePayment = () => {
     if (paymentMode === "card") {
       axios
-        .post("http://localhost:5000/api/payment/createpayment", {
+        .post("http://13.201.190.95:5000/api/payment/createpayment", {
           debitPayment: {
             cardNumber: parseInt(number),
             cvv: parseInt(cvc),
@@ -134,7 +134,7 @@ function Payment() {
         });
     } else if (paymentMode === "UPI") {
       axios
-        .post("http://localhost:5000/api/payment/createpayment", {
+        .post("http://13.201.190.95:5000/payment/createpayment", {
           upiPayment: {
             upiId: upiId,
           },
