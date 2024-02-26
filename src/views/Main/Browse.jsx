@@ -20,8 +20,8 @@ const Browse = () => {
     try {
       const response = await axios.get(
         isBride
-          ? "http://localhost:5000/api/bride/view"
-          : "http://localhost:5000/api/groom/view",
+          ? "http://13.201.190.95:5000/api/bride/view"
+          : "http://13.201.190.95:5000/api/groom/view",
       );
       setBridesGrooms(response.data.data);
       console.log(response.data.data);
