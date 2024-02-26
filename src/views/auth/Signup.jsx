@@ -16,7 +16,7 @@ function Signup() {
       e.preventDefault();
 
       console.log(fname, lname, email, password);
-      fetch("http://localhost:5000/api/user/register", {
+      fetch("http://13.201.190.95:5000/api/user/register", {
         method: "POST",
         crossDomain: true,
         headers: {
