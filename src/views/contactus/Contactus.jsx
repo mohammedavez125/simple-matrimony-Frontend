@@ -9,7 +9,7 @@ function Contactus() {
 
   async function sendResponse() {
     const response = await axios.post(
-      "http://localhost:5000/api/contact/sendmessage",
+      "http://13.201.190.95:5000/api/contact/sendmessage",
       {
         name: name,
         email: email,
