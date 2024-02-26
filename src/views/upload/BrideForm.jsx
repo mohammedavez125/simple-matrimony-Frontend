@@ -37,7 +37,7 @@ const BrideForm = (props) => {
     console.log(formData)
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/bride/add", formData);
+      await axios.post("http://13.201.190.95:5000/api/bride/add", formData);
       alert("Bride data submitted successfully!");
       setFormData({
         image: "",
