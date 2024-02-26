@@ -37,7 +37,7 @@ const GroomForm = (props) => {
     console.log(formData)
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/groom/add", formData);
+      await axios.post("http://13.201.190.95:5000/api/groom/add", formData);
       alert("Groom data submitted successfully!");
       // Clear form fields after successful submission
       setFormData({
