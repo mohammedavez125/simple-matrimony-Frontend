@@ -20,7 +20,7 @@ function AdminHome({ userData }) {
 
   const deleteUser = (id, name) => {
     if (window.confirm(`Are you sure you want to delete ${name}`)) {
-      fetch("http://localhost:5000/deleteUser", {
+      fetch("http://13.201.190.95:5000/deleteUser", {
         method: "POST",
         crossDomain: true,
         headers: {
@@ -54,7 +54,7 @@ function AdminHome({ userData }) {
 
   const getPaginatedUsers = () => {
     fetch(
-      `http://localhost:5000/paginatedUsers?page=${currentPage.current}&limit=${limit}`,
+      `http://13.201.190.95:5000/paginatedUsers?page=${currentPage.current}&limit=${limit}`,
       {
         method: "GET",
       },
